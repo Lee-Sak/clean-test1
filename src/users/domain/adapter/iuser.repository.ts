@@ -8,4 +8,5 @@ export interface IUserRepository {
     password: string,
     signupVerifyToken: string,
   ) => Promise<void>;
+  findById: (id: number) => Promise<User>;
 }
